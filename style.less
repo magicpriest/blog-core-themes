@@ -68,6 +68,7 @@ header nav ul {
     li {
         .inline-button();
         .border-radius(5px);
+        .box-shadow(@menu-item-shadow);
         border: @menu-item-border;
         background: @menu-item-background;
         margin: 4px 4px 0 0;
@@ -97,6 +98,7 @@ header nav ul {
 .taggy() {
     .inline-button();
     .border-radius(10px);
+    .box-shadow(@tag-shadow);
     border: @tag-border;
     background: @tag-background;
     margin-top: 4px;
@@ -220,6 +222,7 @@ button {
     background: @form-button-background;
     color: @form-button-color;
     .border-radius(5px);
+    .box-shadow(@form-button-shadow);
     padding: 6px;
     margin: 4px 4px 0 0;
     min-width: 70px;

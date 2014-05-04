@@ -24,13 +24,13 @@ h3,
 h4,
 h5,
 h6 {
-  color: #e64500;
+  color: #333333;
   font-family: "Arial", sans-serif;
   font-weight: normal;
 }
 a {
   text-decoration: underline;
-  color: #e64500;
+  color: #333333;
 }
 a img {
   border: 0;
@@ -59,20 +59,20 @@ header nav ul li {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  border: 0;
-  background: #ff824d;
+  -webkit-box-shadow: 0 0 3px 0 rgba(50, 50, 50, 0.2);
+  -moz-box-shadow: 0 0 3px 0 rgba(50, 50, 50, 0.2);
+  box-shadow: 0 0 3px 0 rgba(50, 50, 50, 0.2);
+  border: 1px solid #666666;
+  background: #ffffff;
   margin: 4px 4px 0 0;
   padding: 6px;
   min-width: 50px;
 }
 header nav ul li:hover {
-  background: #ffcab3;
+  background: #f2f2f2;
 }
 header nav ul li a {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
   font-weight: bold;
 }
@@ -91,20 +91,20 @@ header nav ul li a {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  border: 0;
-  background: #ffe3d7;
+  -webkit-box-shadow: 0 0 2px 0 rgba(50, 50, 50, 0.2);
+  -moz-box-shadow: 0 0 2px 0 rgba(50, 50, 50, 0.2);
+  box-shadow: 0 0 2px 0 rgba(50, 50, 50, 0.2);
+  border: 1px solid #666666;
+  background: #ffffff;
   margin-top: 4px;
   padding: 0px 6px;
   min-width: 30px;
 }
 .meta .tags ul li:hover {
-  background: #ffcab3;
+  background: #f2f2f2;
 }
 .meta .tags ul li a {
-  color: #671f00;
+  color: #000000;
   text-decoration: none;
   font-weight: normal;
 }
@@ -115,20 +115,20 @@ header nav ul li a {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  border: 0;
-  background: #ffe3d7;
+  -webkit-box-shadow: 0 0 2px 0 rgba(50, 50, 50, 0.2);
+  -moz-box-shadow: 0 0 2px 0 rgba(50, 50, 50, 0.2);
+  box-shadow: 0 0 2px 0 rgba(50, 50, 50, 0.2);
+  border: 1px solid #666666;
+  background: #ffffff;
   margin-top: 4px;
   padding: 0px 6px;
   min-width: 30px;
 }
 .meta .author:hover {
-  background: #ffcab3;
+  background: #f2f2f2;
 }
 .meta .author a {
-  color: #671f00;
+  color: #000000;
   text-decoration: none;
   font-weight: normal;
 }
@@ -166,7 +166,7 @@ pre code {
   margin: 0.5em 0;
 }
 .comment-author {
-  color: #e64500;
+  color: #333333;
   font-weight: bold;
 }
 .comment:target {
@@ -180,7 +180,7 @@ form {
 }
 label {
   font-weight: bold;
-  color: #e64500;
+  color: #333333;
 }
 input[type="text"] {
   border: 1px solid #666666;
@@ -217,15 +217,15 @@ button {
   font-weight: bold;
   line-height: 1.5;
   cursor: pointer;
-  border: 0;
-  background: #ff824d;
-  color: #ffffff;
+  border: 1px solid #666666;
+  background: #ffffff;
+  color: #333333;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
+  -webkit-box-shadow: 0 0 3px 0 rgba(50, 50, 50, 0.2);
+  -moz-box-shadow: 0 0 3px 0 rgba(50, 50, 50, 0.2);
+  box-shadow: 0 0 3px 0 rgba(50, 50, 50, 0.2);
   padding: 6px;
   margin: 4px 4px 0 0;
   min-width: 70px;
@@ -236,7 +236,7 @@ button:focus {
   outline: none;
 }
 button:hover {
-  background: #ffcab3;
+  background: #f2f2f2;
 }
 .input-error {
   border-color: red !important;

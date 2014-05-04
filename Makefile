@@ -1,6 +1,6 @@
 remote=root@blog-core.rlaanemets.com:/usr/share/nginx/blog-core.rlaanemets.com/themes
 
-all: blue green orange red white pink
+all: blue green orange red white pink white-alt
 
 # FIXME add mixins.less as dependency
 
@@ -70,6 +70,17 @@ pink/index.html: index.html
 pink/page.html: page.html
 	cp $< $@
 
+white-alt: white-alt/style.css white-alt/index.html white-alt/page.html
+
+white-alt/style.css: white-alt/white-alt.less white-alt/white-alt_settings.less style.less
+	lessc $< $@
+
+white-alt/index.html: index.html
+	cp $< $@
+
+white-alt/page.html: page.html
+	cp $< $@
+
 clean:
 	rm -f blue/style.css blue/index.html
 	rm -f green/style.css green/index.html
@@ -77,8 +88,9 @@ clean:
 	rm -f red/style.css red/index.html
 	rm -f white/style.css white/index.html
 	rm -f pink/style.css pink/index.html
+	rm -f white-alt/style.css white-alt/index.html
 
 upload:
 	rsync --exclude='.*' -avz -e ssh . $(remote)
 
-.PHONY: all blue green orange red white clean pink
+.PHONY: all blue green orange red white clean pink white-alt

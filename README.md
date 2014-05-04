@@ -10,6 +10,7 @@ Available colors:
  * Red: <http://blog-core.rlaanemets.com/themes/red/index.html>
  * White: <http://blog-core.rlaanemets.com/themes/white/index.html>
  * Pink: <http://blog-core.rlaanemets.com/themes/pink/index.html>
+ * White (alternative): <http://blog-core.rlaanemets.com/themes/white-alt/index.html>
 
 Each demo comes with two pages: the front page and a post page. Themes
 are tested with IE8+ and modern browsers.
