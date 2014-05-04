@@ -1,0 +1,254 @@
+@import "mixins";
+
+// Reset and main typography.
+
+header,
+address,
+main,
+footer,
+nav,
+section,
+article,
+aside {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "DejaVu Sans", sans-serif;
+    color: #333333;
+    line-height: 1.5;
+}
+
+time {
+    display: inline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: @heading-color;
+    font-family: "Arial", sans-serif;
+    font-weight: @heading-weight;
+}
+
+a {
+    text-decoration: @link-decoration;
+    color: @link-color;
+    img {
+        border: 0;
+    }
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: @hr-background;
+}
+
+footer {
+    margin-top: 2em;
+}
+
+// The main container.
+
+.container {
+    margin: 20px auto;
+    width: 800px;
+}
+
+// Page header and the main navigation list.
+
+header nav ul {
+    .none-list-style();
+    li {
+        .inline-button();
+        .border-radius(5px);
+        border: @menu-item-border;
+        background: @menu-item-background;
+        margin: 4px 4px 0 0;
+        padding: 6px;
+        min-width: 50px;
+        &:hover {
+            background: @menu-item-hover-background;
+        }
+        a {
+            color: @menu-item-color;
+            text-decoration: @menu-item-decoration;
+            font-weight: @menu-item-weight;
+        }
+    }
+}
+
+// Article summaries.
+
+.summary h3 a {
+    text-decoration: none;
+}
+
+// Meta section.
+// Taggy mixin is used by both
+// tags and the byline.
+
+.taggy() {
+    .inline-button();
+    .border-radius(10px);
+    border: @tag-border;
+    background: @tag-background;
+    margin-top: 4px;
+    padding: 0px 6px;
+    min-width: 30px;
+    &:hover {
+        background: @tag-hover-background;
+    }
+    a {
+        color: @tag-color;
+        text-decoration: @tag-decoration;
+        font-weight: @tag-weight;
+    }
+}
+
+.meta .tags ul {
+    .none-list-style();
+    li {
+        .taggy();
+    }
+}
+
+.meta .author {
+    .taggy();
+}
+
+// Single post page enhancements.
+
+.post-page .meta {
+    margin-bottom: 2em;
+}
+
+// Make post images responsive.
+
+.post-page img {
+    max-width: 100%;
+}
+
+// Block and inline code sections.
+
+code {
+    background: @code-background;
+    border: @code-border;
+    padding: 2px 4px;
+    .border-radius(3px);
+    color: #000;
+}
+
+pre {
+    background: @code-background;
+    border: @code-border;
+    padding: 1em;
+    .border-radius(3px);
+    overflow: auto;
+}
+
+pre code {
+    background-color: inherit;
+    border: 0;
+    padding: 0;
+}
+
+// Comments.
+
+.comment {
+    padding: 0.5em;
+    margin: 0.5em 0;
+}
+
+.comment-author {
+    color: @comment-author-color;
+    font-weight: bold;
+}
+
+.comment:target {
+    background-color: #f8fcde;
+    .border-radius(5px);
+}
+
+// Comment form.
+
+form {
+    line-height: 2.0;
+}
+
+label {
+    font-weight: bold;
+    color: @form-label-color;
+}
+
+input[type="text"] {
+    border: @form-input-border;
+    padding: 4px;
+    .border-radius(4px);
+    .border-box-sizing();
+    width: 300px;
+    font-size: inherit;
+    &:focus {
+        outline: @form-input-outline;
+    }
+}
+
+textarea {
+    border: @form-input-border;
+    padding: 4px;
+    .border-radius(4px);
+    .border-box-sizing();
+    width: 100%;
+    font-size: inherit;
+    &:focus {
+        outline: @form-input-outline;
+    }
+}
+
+button {
+    font-size: inherit;
+    font-weight: @form-button-weight;
+    line-height: 1.5;
+    cursor: pointer;
+    border: @form-button-border;
+    background: @form-button-background;
+    color: @form-button-color;
+    .border-radius(5px);
+    padding: 6px;
+    margin: 4px 4px 0 0;
+    min-width: 70px;
+    text-align: center;
+    text-decoration: @form-button-decoration;
+    &:focus {
+        outline: @form-input-outline;
+    }
+    &:hover {
+        background: @form-button-hover-background;
+    }
+}
+
+.input-error {
+    border-color: red !important;
+}
+
+#comment-errors {
+    color: red;
+}
+
+// Responsiveness.
+
+@media (max-width: 980px) {
+    .container {
+        width: 100%;
+    }
+    input[type="text"],
+    textarea {
+        width: 100%;
+    }
+}

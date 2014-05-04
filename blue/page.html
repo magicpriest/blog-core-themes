@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>The post title</title>
+    <!--[if lt IE 9]><script src="../js/html5-els.js"></script><![endif]-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../print.css" media="print">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>The main title/blog name</h1>
+            <nav role="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="page.html">A something</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article itemscope itemtype="http://schema.org/Article" class="post-page">
+                <h2 itemprop="name">Lorem ipsum</h2>
+                <div class="meta">
+                    <div class="date">
+                        On <time itemprop="datePublished" datetime="2014-04-21">2014-04-21</time>
+                    </div>
+                    <div class="byline">By
+                        <div class="author">
+                            <a itemprop="author" href="#">Post author</a>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <ul role="navigation">
+                            <li><a href="#" class="tag">lorem</a></li>
+                            <li><a href="#" class="tag">ipsum</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div itemprop="articleBody" class="body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec porta urna,
+                    non rutrum est. Proin ut congue justo. Nunc ultrices ipsum eget nisi mattis tincidunt.
+                    Morbi a urna sapien. Morbi consectetur posuere luctus. Mauris ut varius mauris. Nullam
+                    vitae convallis urna. Sed ac convallis dolor. Sed a tincidunt tellus. Morbi nec hendrerit
+                    sapien. Quisque pellentesque magna a odio pharetra, posuere auctor sapien porttitor. Cras
+                    ultrices, risus ut pellentesque vulputate, lorem nisi accumsan urna, sollicitudin vehicula
+                    nunc purus sed nunc.</p>
+
+                    <h3>An image is here</h3>
+
+                    <p><a href="#"><img alt="Large image" src="../images/large.gif"></a></p>
+
+                    <p>Donec non est vitae sem sagittis consequat at non diam. Curabitur aliquet vitae lorem
+                    ut venenatis. Fusce vel porttitor neque. Nullam egestas iaculis lacus, a rutrum ante
+                    consectetur sed. Maecenas laoreet fringilla mi a pharetra. Nullam vehicula sem in risus
+                    imperdiet euismod. Sed sit amet magna aliquam, commodo lectus sodales, accumsan leo.
+                    Cras iaculis a diam suscipit aliquet.</p>
+
+                    <h3>Some code section</h3>
+
+                    <pre><code>writeln("Hello world");</code></pre>
+
+                    <p>Also, inline <code>1+2</code> code can be used.</p>
+
+                    <p>Donec eleifend condimentum augue, et hendrerit dui
+                    iaculis non. Sed aliquam gravida elit, et dictum nunc porttitor ut. Curabitur rhoncus
+                    vehicula orci at eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et
+                    ultrices posuere cubilia Curae; Quisque tincidunt pulvinar eros vel aliquet.</p>
+                </div>
+                <hr>
+                <h3>Share</h3>
+                <p>
+                    Share the article link:<br>
+                    <code id="url">http://example.com/lorem-ipsum</code>
+                    <script>
+                        var url = document.getElementById('url');
+                        url.onclick = function() {
+                            if (window.getSelection) {
+                                var range = document.createRange();
+                                range.selectNode(url);
+                                window.getSelection().addRange(range);
+                            } else if (document.selection) {
+                                var range = document.body.createTextRange();
+                                range.moveToElementText(url);
+                                range.select();
+                            }
+                        }
+                    </script>
+                </p>
+                <h3>Comments</h3>
+                <div class="comments">
+                    <article class="comment" id="comment-3ffb06e0-855b-4bab-a020-3e19b4dd35ea">
+                        <div class="comment-meta">
+                            <span class="comment-author">Test user</span> at 2014-03-17
+                        </div>
+                        <div class="comment-message">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                            nec porta urna, non rutrum est. Proin ut congue justo. Nunc
+                            ultrices ipsum eget nisi mattis tincidunt.
+                        </div>
+                    </article>
+                    <hr>
+                    <article class="comment" id="comment-3ffb06e0-855b-4bab-a020-3e19b4dd35ef">
+                        <div class="comment-meta">
+                            <span class="comment-author"><a href="#" rel="nofollow">Test user</a></span> at 2014-03-17
+                        </div>
+                        <div class="comment-message">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                            nec porta urna, non rutrum est. Proin ut congue justo. Nunc
+                            ultrices ipsum eget nisi mattis tincidunt.
+                        </div>
+                    </article>
+                    <hr>
+                </div>
+                <noscript>Commenting requires JavaScript support</noscript>
+                <form class="comment-form" id="comment-form" role="form">
+                    <input type="hidden" name="question" value="0" id="comment-question">
+                    <input type="hidden" name="post-id" value="f0482bdb-3380-4446-a8b2-229e4c53e4ed" id="post-id">
+                    <label for="comment-author">Author</label><br>
+                    <input type="text" name="author" placeholder="Your name" id="comment-author"><br>
+                    <label for="comment-email">Email (may be left blank)</label><br>
+                    <input type="text" name="email" placeholder="Your email" id="comment-email"><br>
+                    <label for="comment-website">Website (may be left blank)</label><br>
+                    <input type="text" name="site" placeholder="http://" id="comment-website"><br>
+                    <label for="comment-message">Message</label> <small>(URLs (<strong>max 3</strong>) starting
+                        with http:// or https:// can be used.)</small><br>
+                    <textarea name="message" placeholder="Your comment" id="comment-message" rows="10" cols="60"></textarea>
+                    <label for="comment-answer" id="comment-answer-label"></label><br>
+                    <input type="text" name="answer" placeholder="Your answer" id="comment-answer"><br>
+                    <button type="submit">Send</button>
+                </form>
+                <ul id="comment-errors"></ul>
+            </article>
+        </main>
+        <footer>
+            <hr>
+            <p>
+                <small>Blog-Core themes</small>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
