@@ -38,11 +38,11 @@ a {
     color: inherit;
 }
 
-.meta .tags ul li::after {
+.meta .tags ul li:before {
     content: ', ';
 }
 
-.meta .tags ul li:last-child::after {
+.meta .tags ul li:first-child:before {
     content: '';
 }
 

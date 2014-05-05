@@ -15,6 +15,15 @@ Available colors:
 Each demo comes with two pages: the front page and a post page. Themes
 are tested with IE8+ and modern browsers.
 
+## Important files
+
+Each theme refers the following files:
+
+ * style.css in theme directory
+ * html5shiv-printshiv.min.js in the project root directory, it is needed
+   for [HTML5 elements support on IE8](https://github.com/aFarkas/html5shiv).
+ * print.css in the project root directory (common for all)
+
 ## Print support
 
 Print support is provided by the `print.css` in the project root. It switches
