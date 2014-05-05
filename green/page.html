@@ -80,6 +80,7 @@
                             if (window.getSelection) {
                                 var range = document.createRange();
                                 range.selectNode(url);
+                                window.getSelection().removeAllRanges();
                                 window.getSelection().addRange(range);
                             } else if (document.selection) {
                                 var range = document.body.createTextRange();
