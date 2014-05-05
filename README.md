@@ -15,6 +15,12 @@ Available colors:
 Each demo comes with two pages: the front page and a post page. Themes
 are tested with IE8+ and modern browsers.
 
+## Print support
+
+Print support is provided by the `print.css` in the project root. It switches
+fonts to `serif`, removes the main menu, comment form and removes colored decorations.
+The fixed page width is also removed.
+
 ## Building
 
 The [Less CSS compiler](http://lesscss.org/) and a Makefile is used for producing these themes.
