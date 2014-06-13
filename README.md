@@ -4,13 +4,13 @@ A collection of flat minimal monochrome responsive themes for simple blogs.
 
 Available colors:
 
- * Blue: <http://blog-core.rlaanemets.com/themes/blue/index.html>
- * Green: <http://blog-core.rlaanemets.com/themes/green/index.html>
- * Orange: <http://blog-core.rlaanemets.com/themes/orange/index.html>
- * Red: <http://blog-core.rlaanemets.com/themes/red/index.html>
- * White: <http://blog-core.rlaanemets.com/themes/white/index.html>
- * Pink: <http://blog-core.rlaanemets.com/themes/pink/index.html>
- * White (alternative): <http://blog-core.rlaanemets.com/themes/white-alt/index.html>
+ * Blue: <http://themes.blog-core.net/blue/>
+ * Green: <http://themes.blog-core.net/green/>
+ * Orange: <http://themes.blog-core.net/orange/>
+ * Red: <http://themes.blog-core.net/red/>
+ * White: <http://themes.blog-core.net/white/>
+ * Pink: <http://themes.blog-core.net/pink/>
+ * White (alternative): <http://themes.blog-core.net/white-alt/>
 
 Each demo comes with two pages: the front page and a post page. Themes
 are tested with IE8+ and modern browsers.
