@@ -54,8 +54,15 @@ header nav ul {
 }
 header nav ul li {
   display: inline-block;
-  text-align: center;
-  cursor: pointer;
+  margin: 4px 4px 0 0;
+}
+header nav ul li a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px;
+  min-width: 50px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -64,17 +71,11 @@ header nav ul li {
   box-shadow: none;
   border: 0;
   background: #595959;
-  margin: 4px 4px 0 0;
-  padding: 6px;
-  min-width: 50px;
+  text-align: center;
+  cursor: pointer;
 }
-header nav ul li:hover {
+header nav ul li a:hover {
   background: #999999;
-}
-header nav ul li a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
 }
 .summary h3 a {
   text-decoration: none;

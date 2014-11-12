@@ -66,21 +66,24 @@ footer {
 header nav ul {
     .none-list-style();
     li {
-        .inline-button();
-        .border-radius(5px);
-        .box-shadow(@menu-item-shadow);
-        border: @menu-item-border;
-        background: @menu-item-background;
+        display: inline-block;
         margin: 4px 4px 0 0;
-        padding: 6px;
-        min-width: 50px;
-        &:hover {
-            background: @menu-item-hover-background;
-        }
         a {
+            display: block;
             color: @menu-item-color;
             text-decoration: @menu-item-decoration;
             font-weight: @menu-item-weight;
+            padding: 6px;
+            min-width: 50px;
+            .border-radius(5px);
+            .box-shadow(@menu-item-shadow);
+            border: @menu-item-border;
+            background: @menu-item-background;
+            text-align: center;
+            cursor: pointer;
+            &:hover {
+                background: @menu-item-hover-background;
+            }
         }
     }
 }
